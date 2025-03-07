@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Body Lotion</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            border: 5px solid gold;
+            padding: 20px;
+            margin: auto;
+            width: 80%;
+            background-color: black;
+            text-align: center;
+        }
+        h1, h2 {
+            color: white;
+        }
+        table, th, td {
+            border: 1px solid gold;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: gold;
+            padding: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        marquee {
+            color: gold;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <marquee>WELCOME BACK!</marquee>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a id="contactUs">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Welcome to Luxury Body Lotion</h1>
+        <p>Experience the best in skincare with our premium body lotion.</p>
+        <img src="images/body-lotion.jpg" alt="Luxury Body Lotion" class="main-image">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>100% Natural Ingredients</li>
+            <li>Moisturizing & Nourishing</li>
+            <li>Perfect for All Skin Types</li>
+        </ul>
+        <h2>Customer Testimonials</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Review</th>
+            </tr>
+            <tr>
+                <td>Sarah</td>
+                <td>Amazing product! My skin has never felt so soft.</td>
+            </tr>
+            <tr>
+                <td>Michael</td>
+                <td>Highly recommend this lotion, great fragrance and texture.</td>
+            </tr>
+        </table>
+        <h2>Watch Our Video</h2>
+        <video width="320" height="240" controls>
+            <source src="videos/lotion-ad.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2>Subscribe for Updates</h2>
+        <form id="subscribeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Subscribe">
+        </form>
+        <p id="subscribeMessage" style="display: none; color: gold; font-size: 18px; font-weight: bold;"></p>
+        <p id="contactMessage" style="display: none; color: gold; font-size: 18px; font-weight: bold;">Email: luxurylotion@gmail.com<br>Phone: 0712110901</p>
+    </div>
+    <script>
+        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("subscribeMessage").innerText = "You have subscribed to Luxury Body Lotion!";
+            document.getElementById("subscribeMessage").style.display = "block";
+        });
+        
+        document.getElementById("contactUs").addEventListener("click", function() {
+            document.getElementById("contactMessage").style.display = "block";
+        });
+    </script>
+</body>
+</html>

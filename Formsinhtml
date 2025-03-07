@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List</title>
+    </head>
+    <body>
+        <h1>Types of fruits</h1>
+        <ul>
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Mangoes</li>
+            <li> Water Melon</li>
+            <li>Pineapples</li>
+        </ul>
+    </body>
+    
+</html>
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Tribute to Jakes Braiden</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: blue;
+        }
+        /* Frame around the whole page */
+        .frame-container {
+            border: 10px solid darkblue; /* Creates a thick blue frame */
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for 3D effect */
+            max-width: 800px; /* Keeps content centered */
+            margin: auto; /* Centers the frame */
+            background-color: white;
+        }
+        header {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: gold;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .quote {
+            font-style: italic;
+            color: lightseagreen;
+            margin-top: 30px;
+            font-size: 1.4em;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        .admiration-list {
+            margin-top: 20px;
+            text-align: left;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="frame-container">
+    <header>
+        <h1>Jakes Braiden</h1>
+    </header>
+
+    <section>
+        <h1>A GREAT BUSINESS PERSON</h1>
+        <p>Jakes Braiden (1994–2025) was the Chief Executive Officer (CEO) of Braiden Adventures & Safaris.</p>
+        <p>His vision of exploring the world and succeeding in business was extraordinary. Despite the many challenges he faced before establishing his company, today he is celebrated as a great businessperson.</p>
+        <p>As a young man, he encouraged many Kenyan youths. He created employment for many, helping them achieve their dreams.</p>
+        <blockquote class="quote">"Nothing is impossible for living beings." - Jakes Braiden</blockquote>
+
+        <!-- List of Admiration -->
+        <div class="admiration-list">
+            <h2>Things I Admire About Jakes Braiden:</h2>
+            <ul>
+                <li><strong>Visionary Thinking</strong></li>
+                <li><strong>Persistence</strong></li>
+                <li><strong>Creativity</strong></li>
+                <li><strong>Collaboration</strong></li>
+                <li><strong>Breaking Barriers</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Passionate admirer of Jakes Braiden</p>
+    </footer>
+</div>
+
+</body>
+</html>

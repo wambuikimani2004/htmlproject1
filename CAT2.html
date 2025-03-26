@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Journey | Digital Portfolio</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url('IMG_2457 (1).JPG'); /* Change this to your actual image path */
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            color: red;
+        }
+        header {
+            background-color: purple; /* Changed to pink */
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color:blue;
+        }
+        nav a {
+            color: white;
+            text-decoration: indianred;
+            padding: 15px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: green;
+        }
+        section {
+            padding: 40px 20px;
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: red;
+            color: blue;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: 600px;
+            margin-top: 10px;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 600px;
+        }
+        input, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+        button {
+            padding: 40px 20px;
+            background-color: green;
+            color: white;
+            border: orange;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Personal Journey</h1>
+        <p>By KIMANI WAMBUI | University Student & Aspiring Developer</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('childhood')">Childhood</a>
+        <a href="#" onclick="showSection('education')">Education</a>
+        <a href="#" onclick="showSection('skills')">Skills & Talents</a>
+        <a href="#" onclick="showSection('future')">Future</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="active">
+        <h2>About Me</h2>
+        <p>Hello! I'm Kimani Wambui, a Bachelor of Business Information Technology student at Zetech University. I am passionate about web development, AI, and solving real-world problems through technology.</p>
+        <p>My goal is to become a full-stack developer and create innovative software solutions.</p>
+        <p>I love being in the TECH community, learning, exploring, and implementing new things daily.</p>
+    </section>
+
+    <section id="childhood">
+        <h2>My Childhood</h2>
+        <p>I grew up in a small town where curiosity and creativity shaped my early years. I loved dismantling gadgets to understand how they worked.</p>
+        <p>One of my fondest memories is learning how to cook Ugali with the help of my Mom, which was very difficult at first, and I still enjoy it to this day!</p>
+    </section>
+
+    <section id="education">
+        <h2>My Education</h2>
+        <ul>
+            <li><strong>Primary School:</strong> MWIRUTI PRIMARY SCHOOL (Best performing student in class, Environmental Club Member)</li>
+            <a href="IMG_2457 (1).JPG" target="_blank">
+                <img src="IMG_2457 (1).JPG" alt="Primary School Picture">
+            </a>
+
+            <li><strong>High School:</strong> MAGOMANO GIRLS HIGH SCHOOL (Computer club leader, Peer counseling club leader.)</li>
+            <a href="IMG_2457 (1).JPG" target="_blank">
+                <img src="IMG_2457 (1).JPG" alt="Secondary School Picture">
+            </a>
+
+            <li><strong>University:</strong> ZETECH UNIVERSITY, Bachelor of Business Information Technology "BBIT" (ITECH club leader, WOMEN IN TECH Club member, Hackathon Winner 2024)</li>
+            <a href="IMG_2457 (1).JPG'" target="_blank">
+                <img src="IMG_2457 (1).JPG'" alt="University Picture">
+            </a>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Talents</h2>
+        <ul>
+            <li>Web Development: HTML, CSS, JavaScript, React</li>
+            <li>Programming: Python, Java</li>
+            <li>Design: UI/UX, Adobe Photoshop</li>
+            <li>Other Talents: Guitar playing, Acting</li>
+        </ul>
+        <p>Check out my GitHub for projects: <a href="https://github.com/wambuikimani" target="_blank">GitHub Profile</a></p>
+    </section>
+
+    <section id="future">
+        <h2>Future Aspirations</h2>
+        <p>My short-term goal is to secure an internship with a leading tech company, where I can gain hands-on experience in full-stack development.</p>
+        <p>In the long term, I aspire to work on cutting-edge AI technologies and start my own software company that addresses social and environmental issues through innovative solutions.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Wambui</h2>
+        <p>Email: marthawambuikimani58@gmail.com</p>
+        <p>Phone number: +254712110901</p>
+        <p>Social Media:</p>
+        <ul>
+            <li><a href="https://linkedin.com/in/marthakim" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/wambuikimani" target="_blank">GitHub</a></li>
+        </ul>
+
+        <h3>Send Me a Message</h3>
+        <form onsubmit="return validateForm()">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" rows="4"></textarea><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 KIMANI WAMBUI. All rights reserved.
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        function validateForm() {
+            if (!document.getElementById("name").value || !document.getElementById("email").value || !document.getElementById("message").value) {
+                alert("Please fill in all fields.");
+                return false;
+            }
+            alert("Thank you for contacting us! We'll get back to you shortly.");
+            return true;
+        }
+    </script>
+
+</body>
+</html>
+
